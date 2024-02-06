@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/97409491?v=4">
+<!-- <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/113565962?v=4"> -->
+<head th:replace="~{template.html :: head}"></head>
+<head th:replace="~{template.html :: default-title-description}"></head>
+<head>
+    <link href="/css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body class="bg-black text-white">
+    
+    <!-- Header -->
+    <header th:replace="~{template.html :: header}"></header>
+
+    <!-- Body Container -->
+    <div class="bg-dark bg-gradient" id="BodyContainer" style="margin-top: 0px!important;">
+        <div class="vh-100 d-flex flex-column justify-content-center align-items-center px-3 ThemeToSecondaryGradient">
+            <div class="fs-3 HeaderTextColor move_when_hovered">Hi, my name is</div>
+            <div class="display-1 HeaderTextColor fw-bold move_when_hovered">Babloo Kumar.</div>
+            <div><p>I've completed my Master's degree in computer application (MCA) from the Maharaja Agrasen Himalayan Garhwal University
+Uttarakhand India.</p> </div>
+
+                <a href="#AboutMe" class="my-3 btn btn-dark btn-lg border border-white mx-1" style="width: 150px!important;" title="About Me">About Me</a>
+                <a  href="./files/java_developer_Babloo_Kumar_resume.pdf" target="_blank" class="my-3 btn btn-dark btn-lg border border-white mx-1" style="width: 150px!important;" title="Resume">Resume</a>
+            </div>
+        </div>
+        <div> 
+            <br id="AboutMe"><br><br>
+            <p class="fs-1 d-flex justify-content-center HeaderTextColor fw-bold">About Me</p>
+<!--             <div class="container-xxl Rounded p-5 fs-4 fw-semibold text-left my-3 border border-white" id="AboutMeContainer" th:text="${aboutMe}"> -->
+			<div class="container-xxl Rounded p-7 fs-5 fw-semibold text-left my-3 border border-white" id="AboutMeContainer">
+				<h4>Professional Skills and My Role-:</h4>
+				<p>Involves designing, coding, testing, and maintaining
+					Java-based software & Android Apps, often working on both back-end and front-end
+					of applications. Java Developers are proficient in Java and its
+					associated libraries and frameworks, such as Spring and Hibernate.
+					I work on database integration, performance optimization, and
+					security measures to ensure reliability and efficiency of software
+					systems & Mobile Apps. Collaboration, problem-solving, and strong analytical
+					skills are essential in their work. I will complete your work in
+					given time.</p>
+<!-- 				<h3>IT SKILLS-:</h3> -->
+<!-- 				<p> -->
+<!-- 				<h4>Java 8, Servlet & JSP,Restful Apis. Spring Boot</h4><p> -->
+<!-- 				,HTML5, Bootstrap, JavaScript, Ajax & Jquery,<br> Build Tool- -->
+<!-- 				Maven, <br> Version Control Tool- GitHub<br> Web Server -->
+<!-- 				Apache- Tomcat,<br> IDE- Eclipse, VS Code, NetBeans, Databases- -->
+<!-- 				MySQL -->
+<!-- 				</p> -->
+			</div>
+			<div></div>
+
+			<br id="Projects"><br><br>
+            <p class="fs-1 d-flex justify-content-center HeaderTextColor fw-bold">Projects</p>
+  <!-- <!--04/02/2024 Projects start Dynamic --> 
+<!--             <div class="container-xxl ThemeToSecondaryGradient Rounded text-center my-3 py-3" id="ProjectsContainer"> -->
+<!--                 <div class="spinner-border" id="projectSpinner" role="status"></div> -->
+<!--                 <div class="row row-cols-auto justify-content-center" id="ProjectRows"> -->
+                    
+<!--                 </div> -->
+  <!-- <!--04/02/2024 Projects end Dynamic  and start static--> 
+  				<div class="container-xxl ThemeToSecondaryGradient Rounded text-center my-3 py-3" id="ProjectsContainer">
+                <div class="spinner-border" id="projectSpinner" role="status" style="display: none"></div>
+                <div class="row row-cols-auto justify-content-center" id="ProjectRows">
+                    
+                <a class="Project move_when_hovered" id="ProjectTemplate" href="https://github.com/BablooKumarGitHub/ChatRoomWebApplication" target="_blank">
+    <u class="HeaderTextColor fw-bold fs-4" id="Name">
+        bablookumar.com
+    </u>
+    <div class="my-3 fs-6 fw-semibold" id="Description">
+        Portfolio Website
+    </div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">04/2023</span>
+        <span>-</span>
+        <span id="EndDate">01/2024</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    </div>
+</a>
+<a class="Project move_when_hovered" id="Project99952" href="https://github.com/BablooKumarGitHub/ChatRoomWebApplication" target="_blank" style="display: block;">
+    <u class="HeaderTextColor fw-bold fs-4" id="Name">Chat-App</u>
+    <div class="my-3 fs-6 fw-semibold" id="Description">Real-time chat application where users can create an account via OAuth 2.0, create custom group chats, and send messages.</div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">08/2022</span>
+        <span>-</span>
+        <span id="EndDate">02/2023</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/bootstrap" class="mx-1">
+            <span>
+                Bootstrap
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/cloudflare" class="mx-1">
+            <span>
+                Cloudflare
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/githubactions" class="mx-1">
+            <span>
+                GitHub Actions
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm">
+            <span>
+                Java
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mariadb" class="mx-1">
+            <span>
+                MariaDB
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/react" class="mx-1">
+            <span>
+                React
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/springboot" class="mx-1">
+            <span>
+                Spring Boot
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/typescript" class="mx-1">
+            <span>
+                TypeScript
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/webpack" class="mx-1">
+            <span>
+                Webpack
+            </span>
+        </span></div>
+</a><a class="Project move_when_hovered" id="Project1" href="https://github.com/BablooKumarGitHub/smartContactManager" target="_blank" style="display: block">
+    <u class="HeaderTextColor fw-bold fs-4" id="Name">bablookumar.com</u>
+    <div class="my-3 fs-6 fw-semibold" id="Description">Full stack portfolio website that dynamically loads blog posts and resume information from database with a contact form that emails me when a message is sent.</div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">05/2023</span>
+        <span>-</span>
+        <span id="EndDate">02/2024</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/bootstrap" class="mx-1">
+            <span>
+                Bootstrap
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/cloudflare" class="mx-1">
+            <span>
+                Cloudflare
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/githubactions" class="mx-1">
+            <span>
+                GitHub Actions
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm">
+            <span>
+                Java
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/jquery" class="mx-1">
+            <span>
+                jQuery
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mariadb" class="mx-1">
+            <span>
+                MariaDB
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/springboot" class="mx-1">
+            <span>
+                Spring Boot
+            </span>
+        </span></div>
+</a><a class="Project move_when_hovered" id="Project2" href="https://github.com/BablooKumarGitHub/smartContactManager" target="_blank" style="display: block">
+    <p class="HeaderTextColor fw-bold fs-4" id="Name">Smart Contact Manager</p>
+    <div class="my-3 fs-6 fw-semibold" id="Description">Helped create login system with JWT authentication and email password reset.</div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">01/2023</span>
+        <span>-</span>
+        <span id="EndDate">04/2023</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/express" class="mx-1">
+            <span>
+                Express.js
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/javascript" class="mx-1">
+            <span>
+                JavaScript
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mongodb" class="mx-1">
+            <span>
+                MongoDB
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mongoose" class="mx-1">
+            <span>
+                Mongoose
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/nodedotjs" class="mx-1">
+            <span>
+                Node.js
+            </span>
+        </span></div>
+</a><a class="Project move_when_hovered" id="Project102" href="https://github.com/BablooKumarGitHub/smartContactManager" target="_blank" style="display: block;">
+    <p class="HeaderTextColor fw-bold fs-4" id="Name">Android Apps</p>
+    <div class="my-3 fs-6 fw-semibold" id="Description">Full stack application that generates Spotify playlist based on inputted songs, genres, and artists, utilizing Spotify's API.</div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">11/2022</span>
+        <span>-</span>
+        <span id="EndDate">11/2022</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/css3" class="mx-1">
+            <span>
+                CSS
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/express" class="mx-1">
+            <span>
+                Express.js
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/javascript" class="mx-1">
+            <span>
+                JavaScript
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/jquery" class="mx-1">
+            <span>
+                jQuery
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/nodedotjs" class="mx-1">
+            <span>
+                Node.js
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/render" class="mx-1">
+            <span>
+                Render
+            </span>
+        </span></div>
+</a>
+<a class="Project move_when_hovered" id="Project103" href="https://github.com/BablooKumarGitHub/CRUDOperation-Using-Spring-MVC" target="_blank" style="display: block">
+    <p class="HeaderTextColor fw-bold fs-4" id="Name">Android Apps</p>
+    <div class="my-3 fs-6 fw-semibold" id="Description">
+    Based on Wordle, generates random 5-letter word every day / round and user has to guess the word in 6 attempts.
+    </div>
+    <div class="fs-6 fw-semibold fst-italic" id="DateContainer">
+        <span id="StartDate">10/2022</span>
+        <span>-</span>
+        <span id="EndDate">11/2022</span>
+    </div>
+    <div class="my-3" id="SkillsContainer">
+
+    <span class="m-1 btn btn-dark btn-sm">
+            <span>
+                Java
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm">
+            <span>
+                Java Swing
+            </span>
+        </span>
+     </div> 
+</a>
+<!-- <a class="Project move_when_hovered" id="Project49952" href="https://github.com/jasonpyau/Leetcode-Solutions" target="_blank" style="display: block"> -->
+<!--     <u class="HeaderTextColor fw-bold fs-4" id="Name">Leetcode Solutions</u> -->
+<!--     <div class="my-3 fs-6 fw-semibold" id="Description">Growing repository of 250+ solutions to Leetcode problems written in C++, C, and Java.</div> -->
+<!--     <div class="fs-6 fw-semibold fst-italic" id="DateContainer"> -->
+<!--         <span id="StartDate">09/2022</span> -->
+<!--         <span>-</span> -->
+<!--         <span id="EndDate">02/2024</span> -->
+<!--     </div> -->
+<!--     <div class="my-3" id="SkillsContainer"> -->
+
+<!--     <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/c" class="mx-1"> -->
+<!--             <span> -->
+<!--                 C -->
+<!--             </span> -->
+<!--         </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/cplusplus" class="mx-1"> -->
+<!--             <span> -->
+<!--                 C++ -->
+<!--             </span> -->
+<!--         </span><span class="m-1 btn btn-dark btn-sm"> -->
+<!--             <span> -->
+<!--                 Java -->
+<!--             </span> -->
+<!--         </span></div> -->
+<!-- </a> -->
+</div>
+            </div>
+            </div>
+
+            <br id="Skills"><br><br>
+            <p class="fs-1 d-flex justify-content-center HeaderTextColor fw-bold">Skills</p>
+            <!-- <!--04/02/2024 Skill start Dynamic --> 
+<!--             <div class="container-xxl ThemeToSecondaryGradient Rounded text-center my-3 py-3" id="SkillsContainer"> -->
+<!--                 <div class="spinner-border" id="skillSpinner" role="status" style="display: none"></div> -->
+<!--                 <div id="SkillsTypeRow"> -->
+<!--                     <div id="SkillsTypeRowTemplate"> -->
+<!--                         <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Type</p> -->
+<!--                         <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer"> -->
+
+<!--                         </div> -->
+<!--                     </div> -->
+<!--                 </div> -->
+                <!--04/02/2024 Skill end dynamic -->
+                <!--04/02/2024 Skill start static -->
+                <div class="container-xxl ThemeToSecondaryGradient Rounded text-center my-3 py-3" id="SkillsContainer">
+                <div class="spinner-border" id="skillSpinner" role="status" style="display: none"></div>
+                <div id="SkillsTypeRow">
+                    <div> 
+                    <!-- id="SkillsTypeRowTemplate"> -->
+<!--                         <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Type</p> -->
+                        <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer">
+
+                        </div>
+                    </div>
+                <div id="" style="display: inline">
+                        <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Language</p>
+                        <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer">
+
+<!--            <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/gnubash" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Bash -->
+<!--             </span> -->
+<!--         </span> -->    
+		<span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://www.svgrepo.com/show/184143/java.svg" class="mx-1">
+            <span>
+                Java
+           	 </span>
+        </span>
+		<span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/css3" class="mx-1">
+            <span>
+                CSS
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/html5" class="mx-1">
+            <span>
+                HTML
+            </span>
+        </span>
+        
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/javascript" class="mx-1">
+            <span>
+                JavaScript
+            </span>
+        </span>
+         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://www.svgrepo.com/show/373728/kotlin.svg" class="mx-1">
+            <span>
+                Kotlin
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/c" class="mx-1">
+            <span>
+                C
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/cplusplus" class="mx-1">
+            <span>
+                C++
+            </span>
+        </span>
+        
+<!--         <span class="m-1 btn btn-dark btn-sm"> -->
+<!--             <span> -->
+<!--                 SQL -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/typescript" class="mx-1">
+            <span>
+                TypeScript
+            </span>
+        </span></div>
+                    </div><div id="" style="display: inline;">
+                        <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Framework/Library</p>
+                        <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer">
+
+                        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/bootstrap" class="mx-1">
+            <span>
+                Bootstrap
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/express" class="mx-1">
+            <span>
+                Express.js
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm">
+            <span>
+                Java Swing
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/jquery" class="mx-1">
+            <span>
+                jQuery
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/junit5" class="mx-1">
+            <span>
+                JUnit
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/spring" class="mx-1">
+            <span>
+                Mockito
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/react" class="mx-1">
+            <span>
+                React
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/springboot" class="mx-1">
+            <span>
+                Spring Boot
+            </span>
+        </span></div>
+                    </div><div id="" style="display: inline">
+                        <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Database</p>
+                        <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer">
+
+         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mariadb" class="mx-1">
+            <span>
+                MariaDB 
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://www.svgrepo.com/show/353735/firebase.svg" class="mx-1">
+            <span>
+                Firebase
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://www.svgrepo.com/show/374094/sqlite.svg" class="mx-1">
+            <span>
+                Sqlite
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mongodb" class="mx-1">
+            <span>
+                MongoDB
+            </span>
+        </span>
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mongoose" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Mongoose -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/mysql" class="mx-1">
+            <span>
+                MySQL
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/springboot" class="mx-1">
+            <span>
+                Spring Data JPA
+            </span>
+        </span></div>
+       </div><div id="" style="display: inline">
+                        <p class="fs-3 HeaderTextColor fw-bold" id="SkillType">Software</p>
+      <div class="Rounded my-3 py-2 SkillsRowContainer" id="SkillsRowContainer">
+
+         
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="	https://developer.android.com/static/studio/images/android-studio-stable.svg" class="mx-1">
+            <span>
+                Android Studio
+            </span>
+        </span>
+         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://spring.io/img/projects/spring-tool.svg" class="mx-1">
+            <span>
+                Spring Tool Suite
+            </span>
+        </span>
+         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://www.eclipse.org/downloads/assets/public/images/logo-eclipse.png" class="mx-1">
+            <span>
+                Eclipse
+            </span>
+        </span>
+         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/visualstudiocode" class="mx-1">
+            <span>
+                VSCode
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/microsoftexcel" class="mx-1">
+            <span>
+                Excel
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/git" class="mx-1">
+            <span>
+                Git
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/github" class="mx-1">
+            <span>
+                GitHub
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/githubactions" class="mx-1">
+            <span>
+                GitHub Actions
+            </span>
+        </span>
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/latex" class="mx-1"> -->
+<!--             <span> -->
+<!--                 LaTeX -->
+<!--             </span> -->
+<!--         </span> -->
+<!--         <span class="m-1 btn btn-dark btn-sm"> -->
+<!--             <span> -->
+<!--                 lighttpd -->
+<!--             </span> -->
+<!--         </span> -->
+      
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/macos" class="mx-1"> -->
+<!--             <span> -->
+<!--                 MacOS -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/apachemaven" class="mx-1">
+            <span>
+                Maven
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/nodedotjs" class="mx-1">
+            <span>
+                Node.js
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/npm" class="mx-1">
+            <span>
+                npm
+            </span>
+        </span>
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/adobephotoshop" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Photoshop -->
+<!--             </span> -->
+<!--         </span> -->
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/phpmyadmin" class="mx-1"> -->
+<!--             <span> -->
+<!--                 phpMyAdmin -->
+<!--             </span> -->
+<!--         </span> -->
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/pihole" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Pi-hole -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/postman" class="mx-1">
+            <span>
+                Postman
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/microsoftpowerpoint" class="mx-1">
+            <span>
+                Powerpoint
+            </span>
+        </span>
+          <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/linux" class="mx-1">
+            <span>
+                Linux
+            </span>
+        </span>
+          <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/cloudflare" class="mx-1">
+            <span>
+                Cloudflare
+            </span>
+        </span>
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/raspberrypi" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Raspberry Pi OS -->
+<!--             </span> -->
+<!--         </span> -->
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/render" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Render -->
+<!--             </span> -->
+<!--         </span> -->
+<!--         <span class="m-1 btn btn-dark btn-sm"> -->
+<!--             <span> -->
+<!--                 ssh -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/swagger" class="mx-1">
+            <span>
+                SwaggerHub
+            </span>
+        </span>
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/ubuntu" class="mx-1">
+            <span>
+                Ubuntu
+            </span>
+        </span>
+       
+<!--         <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/webpack" class="mx-1"> -->
+<!--             <span> -->
+<!--                 Webpack -->
+<!--             </span> -->
+<!--         </span> -->
+        <span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/windows" class="mx-1">
+            <span>
+                Windows
+            </span>
+        </span><span class="m-1 btn btn-dark btn-sm"><img height="16" width="16" src="https://cdn.simpleicons.org/microsoftword" class="mx-1">
+            <span>
+                Word
+            </span>
+        </span></div>
+                    </div></div>
+            </div>
+                <!--04/02/2024 Skill end  -->
+            </div>
+
+            <br id="Contact"><br><br>
+            <p class="fs-1 d-flex justify-content-center HeaderTextColor fw-bold">Contact Me</p>
+            <div class="container-xxl ThemeToSecondaryGradient Rounded d-flex align-items-center my-3 flex-column">
+                <div class="form-floating mb-3 w-75 mt-3">
+                    <input class="form-control SecondaryColor text-white" id="NameInput" placeholder="John Doe">
+                    <label for="NameInput">Name</label>
+                </div>
+                <div class="form-floating mb-3 w-75">
+                    <input class="form-control SecondaryColor text-white" id="ContactInfoInput" placeholder="johndoe@example.com">
+                    <label for="ContactInfoInput">Contact Information</label>
+                </div>
+                <div class="form-floating mb-3 w-75">
+                    <textarea class="form-control SecondaryColor text-white" id="MessageInput" placeholder="Message"></textarea>
+                    <label for="MessageInput">Message</label>
+                </div>
+                <div id="SubmitContainer" class="d-flex align-items-center flex-column">
+                    <div class="SuccessMessage" id="ContactFormSuccess">Success</div>
+                    <div class="ErrorMessage" id="ContactFormError">Error</div>
+                    <button class="btn btn-primary border-0" onclick="contactFormSubmit()" type="submit" title="Send Message">Send</button>
+                    <div>
+                        Note: This sends an email notification to me.
+                    </div>
+                    <div class="mb-3">
+                        You may opt to contact me via
+                        <a href="links" title="Socials">Email / Linkedin.</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>        
+    </div>
+
+    <!-- Footer -->
+    <footer th:replace="~{template.html :: footer}"></footer>
+
+    <!-- Scripts -->
+    <th:block th:replace="~{template.html :: scripts}"></th:block>
+    <script src="/javascript/ContactForm.js"  type="module"></script>
+    <script src="/javascript/projects.js"  type="module"></script>
+    <script src="/javascript/skills.js"  type="module"></script>
+    <script>
+        document.getElementById("nav-link-home").classList.add("active");
+    </script>
+</body>
+</html>
